@@ -1,0 +1,222 @@
+[
+  {
+    "id": "0",
+    "name": "Red Dead Redemption 2",
+    "category": "Single-Player",
+    "imageUrl": [
+      "https://sm.ign.com/ign_pl/review/r/red-dead-r/red-dead-redemption-2-review_7845.jpg",
+      "https://sm.ign.com/ign_pl/review/r/red-dead-r/red-dead-redemption-2-review_7845.jpg"
+    ],
+    "oldPrice": "1899.00",
+    "sizes": [
+      { "size": "6.0", "isSelected": false },
+      { "size": "6.5", "isSelected": false },
+      { "size": "7.0", "isSelected": false },
+      { "size": "7.5", "isSelected": false },
+      { "size": "8.0", "isSelected": false },
+      { "size": "8.5", "isSelected": false },
+      { "size": "9.0", "isSelected": false }
+    ],
+    "price": "49.00",
+    "description": "Trzecia część serii Red Dead, a zarazem prequel bestsellerowego Red Dead Redemption. W Red Dead Redemption 2 gracze trafiają na Dziki Zachód z 1899 roku, by w skórze Arthura Morgana stawić czoła problemom, jakie trapią gang Dutcha van der Lindego.",
+    "title": ""
+  },
+  {
+    "id": "1",
+    "name": "The Witcher3: Wild Hunt",
+    "category": "Single-Player",
+    "oldPrice": "99.00",
+    "imageUrl": [
+      "https://gaming-cdn.com/images/products/268/orig/the-witcher-3-wild-hunt-pc-game-gog-com-cover.jpg?v=1698413872",
+      "https://gaming-cdn.com/images/products/268/orig/the-witcher-3-wild-hunt-pc-game-gog-com-cover.jpg?v=1698413872"
+    ],
+    "sizes": [
+      { "size": "6.0", "isSelected": false },
+      { "size": "6.5", "isSelected": false },
+      { "size": "7.0", "isSelected": false },
+      { "size": "7.5", "isSelected": false },
+      { "size": "8.0", "isSelected": false },
+      { "size": "8.5", "isSelected": false },
+      { "size": "9.0", "isSelected": false }
+    ],
+    "price": "39.00",
+    "description": "Gra action RPG, stanowiąca trzecią część przygód Geralta z Rivii. Podobnie jak we wcześniejszych odsłonach cyklu, Wiedźmin 3: Dziki Gon bazuje na motywach twórczości literackiej Andrzeja Sapkowskiego, jednak nie jest bezpośrednią adaptacją żadnej z jego książek.",
+    "title": "Adidas Running Shoes With Cooling Ventilations"
+  },
+  {
+    "id": "2",
+    "name": "Kingdom Come: Deliverance",
+    "category": "Single-Player",
+    "imageUrl": [
+      "https://cdn1.epicgames.com/ca4058f18b0a4a9e9e2ccc28f7f33000/offer/EGS_WarhorseStudios_KingdomComeDeliverance_S3-1360x766-1e8502930c6282cb34acf7add01c6832a5bc217e.jpg",
+      "https://cdn1.epicgames.com/ca4058f18b0a4a9e9e2ccc28f7f33000/offer/EGS_WarhorseStudios_KingdomComeDeliverance_S3-1360x766-1e8502930c6282cb34acf7add01c6832a5bc217e.jpg"
+    ],
+    "sizes": [
+      { "size": "6.0", "isSelected": false },
+      { "size": "6.5", "isSelected": false },
+      { "size": "7.0", "isSelected": false },
+      { "size": "7.5", "isSelected": false },
+      { "size": "8.0", "isSelected": false },
+      { "size": "8.5", "isSelected": false },
+      { "size": "9.0", "isSelected": false }
+    ],
+    "oldPrice": "1349.00",
+    "price": "34.00",
+    "description": "Kingdome Come: Deliverance to niesamowicie rozbudowane pierwszoosobowe RPG, którego akcja została osadzona w średniowiecznej Europie (1403 rok). Gracz wciela się w Henryka, syna kowala, który po brutalnym ataku na jego rodzinną wioskę pragnie zemsty na sprawcach napaści. Tym samym wplątuje się w politykę państwa i powiązane z nią intrygi, co stawia go w obliczu znacznie trudniejszego wyzwania. Produkcja ta wyróżnia się przede wszystkim wiernością realiom historycznym oraz wysokim poziomem trudności, na który składa się niełatwa walka i ograniczone możliwości zapisywania stanu rozgrywki.",
+    "title": ""
+  },
+  {
+    "id": "3",
+    "name": "UltraBoost Shoes",
+    "category": "Single-Player",
+    "imageUrl": [
+      "https://d326fntlu7tb1e.cloudfront.net/uploads/d60aca33-909b-4df7-9ad7-b75039438e29-GX1398_a1.webp",
+      "https://d326fntlu7tb1e.cloudfront.net/uploads/d60aca33-909b-4df7-9ad7-b75039438e29-GX1398_a1.webp"
+    ],
+    "oldPrice": "999.00",
+    "price": "49.00",
+    "sizes": [
+      { "size": "6.0", "isSelected": false },
+      { "size": "6.5", "isSelected": false },
+      { "size": "7.0", "isSelected": false },
+      { "size": "7.5", "isSelected": false },
+      { "size": "8.0", "isSelected": false },
+      { "size": "8.5", "isSelected": false },
+      { "size": "9.0", "isSelected": false }
+    ],
+    "description": "Put some pep in your step with the adidas Originals NMD R1.V2. The modern silhouette teams up with retro details to create a truly stand-out look. Your new favorite sneakers are right here. Regular fit shows off a streamlined silhouette Classic lace closure lets you adjust for your ideal fit.Textile upper provides a snug comfortable feel. Responsive Boost midsole includes plugs for throwback style",
+    "title": "Adidas Running Shoes With Cooling Ventilations"
+  },
+  {
+    "id": "4",
+    "name": "UltraBoost Shoes",
+    "category": "Single-Player",
+    "imageUrl": [
+      "https://d326fntlu7tb1e.cloudfront.net/uploads/c8f87b40-cf3f-492f-8c04-1fde016ee5a8-GX6326_a1.webp",
+      "https://d326fntlu7tb1e.cloudfront.net/uploads/c8f87b40-cf3f-492f-8c04-1fde016ee5a8-GX6326_a1.webp"
+    ],
+    "oldPrice": "849.00",
+    "sizes": [
+      { "size": "6.0", "isSelected": false },
+      { "size": "6.5", "isSelected": false },
+      { "size": "7.0", "isSelected": false },
+      { "size": "7.5", "isSelected": false },
+      { "size": "8.0", "isSelected": false },
+      { "size": "8.5", "isSelected": false },
+      { "size": "9.0", "isSelected": false }
+    ],
+    "price": "60.00",
+    "description": "Put some pep in your step with the adidas Originals NMD R1.V2. The modern silhouette teams up with retro details to create a truly stand-out look. Your new favorite sneakers are right here. Regular fit shows off a streamlined silhouette Classic lace closure lets you adjust for your ideal fit.Textile upper provides a snug comfortable feel. Responsive Boost midsole includes plugs for throwback style",
+    "title": "Adidas Running Shoes With Cooling Ventilations"
+  },
+  {
+    "id": "5",
+    "name": "UltraBoost Shoes",
+    "category": "Single-Player",
+    "imageUrl": [
+      "https://d326fntlu7tb1e.cloudfront.net/uploads/d60aca33-909b-4df7-9ad7-b75039438e29-GX1398_a1.webp",
+      "https://d326fntlu7tb1e.cloudfront.net/uploads/d60aca33-909b-4df7-9ad7-b75039438e29-GX1398_a1.webp"
+    ],
+    "oldPrice": "599.00",
+    "price": "49.00",
+    "sizes": [
+      { "size": "6.0", "isSelected": false },
+      { "size": "6.5", "isSelected": false },
+      { "size": "7.0", "isSelected": false },
+      { "size": "7.5", "isSelected": false },
+      { "size": "8.0", "isSelected": false },
+      { "size": "8.5", "isSelected": false },
+      { "size": "9.0", "isSelected": false }
+    ],
+    "description": "Put some pep in your step with the adidas Originals NMD R1.V2. The modern silhouette teams up with retro details to create a truly stand-out look. Your new favorite sneakers are right here. Regular fit shows off a streamlined silhouette Classic lace closure lets you adjust for your ideal fit.Textile upper provides a snug comfortable feel. Responsive Boost midsole includes plugs for throwback style",
+    "title": "Adidas Running Shoes With Cooling Ventilations"
+  },
+  {
+    "id": "6",
+    "name": "UltraBoost Shoes",
+    "category": "Single-Player",
+    "imageUrl": [
+      "https://d326fntlu7tb1e.cloudfront.net/uploads/51ee25c7-46b6-4fd4-bfe0-7dca9a9fd8a9-GX6326_a1.webp",
+      "https://d326fntlu7tb1e.cloudfront.net/uploads/51ee25c7-46b6-4fd4-bfe0-7dca9a9fd8a9-GX6326_a1.webp"
+    ],
+    "oldPrice": "2799.00",
+    "price": "86.00",
+    "sizes": [
+      { "size": "6.0", "isSelected": false },
+      { "size": "6.5", "isSelected": false },
+      { "size": "7.0", "isSelected": false },
+      { "size": "7.5", "isSelected": false },
+      { "size": "8.0", "isSelected": false },
+      { "size": "8.5", "isSelected": false },
+      { "size": "9.0", "isSelected": false }
+    ],
+    "description": "Put some pep in your step with the adidas Originals NMD R1.V2. The modern silhouette teams up with retro details to create a truly stand-out look. Your new favorite sneakers are right here. Regular fit shows off a streamlined silhouette Classic lace closure lets you adjust for your ideal fit.Textile upper provides a snug comfortable feel. Responsive Boost midsole includes plugs for throwback style",
+    "title": "Adidas Running Shoes With Cooling Ventilations"
+  },
+  {
+    "id": "7",
+    "name": "UltraBoost Shoes",
+    "category": "Single-Player",
+    "imageUrl": [
+      "https://d326fntlu7tb1e.cloudfront.net/uploads/d60aca33-909b-4df7-9ad7-b75039438e29-GX1398_a1.webp",
+      "https://d326fntlu7tb1e.cloudfront.net/uploads/d60aca33-909b-4df7-9ad7-b75039438e29-GX1398_a1.webp"
+    ],
+    "oldPrice": "1049.00",
+    "sizes": [
+      { "size": "6.0", "isSelected": false },
+      { "size": "6.5", "isSelected": false },
+      { "size": "7.0", "isSelected": false },
+      { "size": "7.5", "isSelected": false },
+      { "size": "8.0", "isSelected": false },
+      { "size": "8.5", "isSelected": false },
+      { "size": "9.0", "isSelected": false }
+    ],
+    "price": "90.00",
+    "description": "Put some pep in your step with the adidas Originals NMD R1.V2. The modern silhouette teams up with retro details to create a truly stand-out look. Your new favorite sneakers are right here. Regular fit shows off a streamlined silhouette Classic lace closure lets you adjust for your ideal fit.Textile upper provides a snug comfortable feel. Responsive Boost midsole includes plugs for throwback style",
+    "title": "Adidas Running Shoes With Cooling Ventilations"
+  },
+  {
+    "id": "8",
+    "name": "UltraBoost Shoes",
+    "category": "Single-Player",
+    "imageUrl": [
+      "https://d326fntlu7tb1e.cloudfront.net/uploads/51ee25c7-46b6-4fd4-bfe0-7dca9a9fd8a9-GX6326_a1.webp",
+      "https://d326fntlu7tb1e.cloudfront.net/uploads/51ee25c7-46b6-4fd4-bfe0-7dca9a9fd8a9-GX6326_a1.webp"
+    ],
+    "oldPrice": "UltraBoost Shoes",
+    "price": "99.00",
+    "sizes": [
+      { "size": "6.0", "isSelected": false },
+      { "size": "6.5", "isSelected": false },
+      { "size": "7.0", "isSelected": false },
+      { "size": "7.5", "isSelected": false },
+      { "size": "8.0", "isSelected": false },
+      { "size": "8.5", "isSelected": false },
+      { "size": "9.0", "isSelected": false }
+    ],
+    "description": "Put some pep in your step with the adidas Originals NMD R1.V2. The modern silhouette teams up with retro details to create a truly stand-out look. Your new favorite sneakers are right here. Regular fit shows off a streamlined silhouette Classic lace closure lets you adjust for your ideal fit.Textile upper provides a snug comfortable feel. Responsive Boost midsole includes plugs for throwback style",
+    "title": "Adidas Running Shoes With Cooling Ventilations"
+  },
+  {
+    "id": "9",
+    "name": "UltraBoost Shoes",
+    "category": "Single-Player",
+    "imageUrl": [
+      "https://d326fntlu7tb1e.cloudfront.net/uploads/51ee25c7-46b6-4fd4-bfe0-7dca9a9fd8a9-GX6326_a1.webp",
+      "https://d326fntlu7tb1e.cloudfront.net/uploads/51ee25c7-46b6-4fd4-bfe0-7dca9a9fd8a9-GX6326_a1.webp"
+    ],
+    "sizes": [
+      { "size": "6.0", "isSelected": false },
+      { "size": "6.5", "isSelected": false },
+      { "size": "7.0", "isSelected": false },
+      { "size": "7.5", "isSelected": false },
+      { "size": "8.0", "isSelected": false },
+      { "size": "8.5", "isSelected": false },
+      { "size": "9.0", "isSelected": false }
+    ],
+    "oldPrice": "1499.00",
+    "price": "79.00",
+    "description": "Put some pep in your step with the adidas Originals NMD R1.V2. The modern silhouette teams up with retro details to create a truly stand-out look. Your new favorite sneakers are right here. Regular fit shows off a streamlined silhouette Classic lace closure lets you adjust for your ideal fit.Textile upper provides a snug comfortable feel. Responsive Boost midsole includes plugs for throwback style",
+    "title": "Adidas Running Shoes With Cooling Ventilations"
+  }
+]
