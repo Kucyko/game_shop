@@ -90,14 +90,14 @@ class _FavoritesState extends State<Favorites> {
                             ),),
 
                           Padding(padding: EdgeInsets.only(
-                            top:12, left:2,
+                            top:12, left:0,
                           ),
 
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(shoe['name'],
-                              style: appstyle(16, Colors.black, FontWeight.bold),),
+                              style: appstyle(13, Colors.black, FontWeight.bold),),
                               const SizedBox(
                                 height: 5,
                               ),

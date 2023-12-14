@@ -5,20 +5,11 @@
     "category": "Single-Player",
     "imageUrl": [
       "https://sm.ign.com/ign_pl/review/r/red-dead-r/red-dead-redemption-2-review_7845.jpg",
-      "https://sm.ign.com/ign_pl/review/r/red-dead-r/red-dead-redemption-2-review_7845.jpg"
+      "https://static.muve.pl/uploads/product-gallery/0084/5191/rdr2-pc-screenshot-005.jpg"
     ],
     "oldPrice": "1899.00",
-    "sizes": [
-      { "size": "6.0", "isSelected": false },
-      { "size": "6.5", "isSelected": false },
-      { "size": "7.0", "isSelected": false },
-      { "size": "7.5", "isSelected": false },
-      { "size": "8.0", "isSelected": false },
-      { "size": "8.5", "isSelected": false },
-      { "size": "9.0", "isSelected": false }
-    ],
     "price": "49.00",
-    "description": "Trzecia część serii Red Dead, a zarazem prequel bestsellerowego Red Dead Redemption. W Red Dead Redemption 2 gracze trafiają na Dziki Zachód z 1899 roku, by w skórze Arthura Morgana stawić czoła problemom, jakie trapią gang Dutcha van der Lindego.",
+    "description": "Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, RDR2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age. Also includes access to the shared living world of Red Dead Online.",
     "title": ""
   },
   {
@@ -28,20 +19,11 @@
     "oldPrice": "99.00",
     "imageUrl": [
       "https://gaming-cdn.com/images/products/268/orig/the-witcher-3-wild-hunt-pc-game-gog-com-cover.jpg?v=1698413872",
-      "https://gaming-cdn.com/images/products/268/orig/the-witcher-3-wild-hunt-pc-game-gog-com-cover.jpg?v=1698413872"
-    ],
-    "sizes": [
-      { "size": "6.0", "isSelected": false },
-      { "size": "6.5", "isSelected": false },
-      { "size": "7.0", "isSelected": false },
-      { "size": "7.5", "isSelected": false },
-      { "size": "8.0", "isSelected": false },
-      { "size": "8.5", "isSelected": false },
-      { "size": "9.0", "isSelected": false }
+      "https://images.gog-statics.com/e6b978f13174499c55f2b8dcc4ab9d08eae7886ab4c72c4b8d0193a97d6babbd_product_card_v2_mobile_slider_639.jpg"
     ],
     "price": "39.00",
-    "description": "Gra action RPG, stanowiąca trzecią część przygód Geralta z Rivii. Podobnie jak we wcześniejszych odsłonach cyklu, Wiedźmin 3: Dziki Gon bazuje na motywach twórczości literackiej Andrzeja Sapkowskiego, jednak nie jest bezpośrednią adaptacją żadnej z jego książek.",
-    "title": "Adidas Running Shoes With Cooling Ventilations"
+    "description": "You are Geralt of Rivia, mercenary monster slayer. Before you stands a war-torn, monster-infested continent you can explore at will. Your current contract? Tracking down Ciri — the Child of Prophecy, a living weapon that can alter the shape of the world.",
+    "title": ""
   },
   {
     "id": "2",
@@ -49,174 +31,102 @@
     "category": "Single-Player",
     "imageUrl": [
       "https://cdn1.epicgames.com/ca4058f18b0a4a9e9e2ccc28f7f33000/offer/EGS_WarhorseStudios_KingdomComeDeliverance_S3-1360x766-1e8502930c6282cb34acf7add01c6832a5bc217e.jpg",
-      "https://cdn1.epicgames.com/ca4058f18b0a4a9e9e2ccc28f7f33000/offer/EGS_WarhorseStudios_KingdomComeDeliverance_S3-1360x766-1e8502930c6282cb34acf7add01c6832a5bc217e.jpg"
-    ],
-    "sizes": [
-      { "size": "6.0", "isSelected": false },
-      { "size": "6.5", "isSelected": false },
-      { "size": "7.0", "isSelected": false },
-      { "size": "7.5", "isSelected": false },
-      { "size": "8.0", "isSelected": false },
-      { "size": "8.5", "isSelected": false },
-      { "size": "9.0", "isSelected": false }
+      "https://cdn.akamai.steamstatic.com/steam/apps/379430/ss_b9b014da63d552adbf4958d9ce6edab64ecfcbae.1920x1080.jpg?t=1700496334"
     ],
     "oldPrice": "1349.00",
     "price": "34.00",
-    "description": "Kingdome Come: Deliverance to niesamowicie rozbudowane pierwszoosobowe RPG, którego akcja została osadzona w średniowiecznej Europie (1403 rok). Gracz wciela się w Henryka, syna kowala, który po brutalnym ataku na jego rodzinną wioskę pragnie zemsty na sprawcach napaści. Tym samym wplątuje się w politykę państwa i powiązane z nią intrygi, co stawia go w obliczu znacznie trudniejszego wyzwania. Produkcja ta wyróżnia się przede wszystkim wiernością realiom historycznym oraz wysokim poziomem trudności, na który składa się niełatwa walka i ograniczone możliwości zapisywania stanu rozgrywki.",
+    "description": "Story-driven open-world RPG that immerses you in an epic adventure in the Holy Roman Empire. Avenge your parents' death as you battle invading forces, go on game-changing quests, and make influential choices. Explore castles, forests, villages and other realistic settings in medieval Bohemia!",
     "title": ""
   },
   {
     "id": "3",
-    "name": "UltraBoost Shoes",
+    "name": "Cyberpunk 2077",
     "category": "Single-Player",
     "imageUrl": [
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/d60aca33-909b-4df7-9ad7-b75039438e29-GX1398_a1.webp",
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/d60aca33-909b-4df7-9ad7-b75039438e29-GX1398_a1.webp"
+      "https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077_CDPROJEKTRED_S1_03_2560x1440-359e77d3cd0a40aebf3bbc130d14c5c7",
+      "https://assetsio.reedpopcdn.com/cyberpunk-2077-phantom-liberty-headline-8.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp"
     ],
     "oldPrice": "999.00",
     "price": "49.00",
-    "sizes": [
-      { "size": "6.0", "isSelected": false },
-      { "size": "6.5", "isSelected": false },
-      { "size": "7.0", "isSelected": false },
-      { "size": "7.5", "isSelected": false },
-      { "size": "8.0", "isSelected": false },
-      { "size": "8.5", "isSelected": false },
-      { "size": "9.0", "isSelected": false }
-    ],
-    "description": "Put some pep in your step with the adidas Originals NMD R1.V2. The modern silhouette teams up with retro details to create a truly stand-out look. Your new favorite sneakers are right here. Regular fit shows off a streamlined silhouette Classic lace closure lets you adjust for your ideal fit.Textile upper provides a snug comfortable feel. Responsive Boost midsole includes plugs for throwback style",
-    "title": "Adidas Running Shoes With Cooling Ventilations"
+    "description": "Cyberpunk 2077 is an open-world, action-adventure RPG set in the dark future of Night City — a dangerous megalopolis obsessed with power, glamor, and ceaseless body modification.",
+    "title": ""
   },
   {
     "id": "4",
-    "name": "UltraBoost Shoes",
+    "name": "Baldur's Gate 3",
     "category": "Single-Player",
     "imageUrl": [
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/c8f87b40-cf3f-492f-8c04-1fde016ee5a8-GX6326_a1.webp",
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/c8f87b40-cf3f-492f-8c04-1fde016ee5a8-GX6326_a1.webp"
+      "https://gaming.komputronik.pl/wp-content/uploads/2023/08/Baldurs-Gate-3-premiera.jpg",
+      "https://www.miastogier.pl/baza/Encyklopedia/gry/News/03.11.2023/nws_bg3_011.jpg"
     ],
     "oldPrice": "849.00",
-    "sizes": [
-      { "size": "6.0", "isSelected": false },
-      { "size": "6.5", "isSelected": false },
-      { "size": "7.0", "isSelected": false },
-      { "size": "7.5", "isSelected": false },
-      { "size": "8.0", "isSelected": false },
-      { "size": "8.5", "isSelected": false },
-      { "size": "9.0", "isSelected": false }
-    ],
     "price": "60.00",
-    "description": "Put some pep in your step with the adidas Originals NMD R1.V2. The modern silhouette teams up with retro details to create a truly stand-out look. Your new favorite sneakers are right here. Regular fit shows off a streamlined silhouette Classic lace closure lets you adjust for your ideal fit.Textile upper provides a snug comfortable feel. Responsive Boost midsole includes plugs for throwback style",
-    "title": "Adidas Running Shoes With Cooling Ventilations"
+    "description": "Baldur’s Gate 3 is a story-rich, party-based RPG set in the universe of Dungeons & Dragons, where your choices shape a tale of fellowship and betrayal, survival and sacrifice, and the lure of absolute power.",
+    "title": ""
   },
   {
     "id": "5",
-    "name": "UltraBoost Shoes",
+    "name": "Alan Wake 2",
     "category": "Single-Player",
     "imageUrl": [
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/d60aca33-909b-4df7-9ad7-b75039438e29-GX1398_a1.webp",
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/d60aca33-909b-4df7-9ad7-b75039438e29-GX1398_a1.webp"
+      "https://assetsio.reedpopcdn.com/alan-wake-2-hub-head_cxrl99c.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp",
+      "https://www.gamereactor.pl/media/41/remedy_4054173.jpg"
     ],
     "oldPrice": "599.00",
     "price": "49.00",
-    "sizes": [
-      { "size": "6.0", "isSelected": false },
-      { "size": "6.5", "isSelected": false },
-      { "size": "7.0", "isSelected": false },
-      { "size": "7.5", "isSelected": false },
-      { "size": "8.0", "isSelected": false },
-      { "size": "8.5", "isSelected": false },
-      { "size": "9.0", "isSelected": false }
-    ],
-    "description": "Put some pep in your step with the adidas Originals NMD R1.V2. The modern silhouette teams up with retro details to create a truly stand-out look. Your new favorite sneakers are right here. Regular fit shows off a streamlined silhouette Classic lace closure lets you adjust for your ideal fit.Textile upper provides a snug comfortable feel. Responsive Boost midsole includes plugs for throwback style",
-    "title": "Adidas Running Shoes With Cooling Ventilations"
+    "description": "Alan Wake 2 (stylized as Alan Wake II) is a survival-horror video game that released on 27 October 2023 on digital storefronts for the PlayStation 5, Xbox Series X|S and PC through the Epic Games Store. It is the sequel to 2010's Alan Wake.",
+    "title": ""
   },
   {
     "id": "6",
-    "name": "UltraBoost Shoes",
+    "name": "Final Fantasy 16",
     "category": "Single-Player",
     "imageUrl": [
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/51ee25c7-46b6-4fd4-bfe0-7dca9a9fd8a9-GX6326_a1.webp",
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/51ee25c7-46b6-4fd4-bfe0-7dca9a9fd8a9-GX6326_a1.webp"
+      "https://lowcygier.pl/wp-content/uploads/2023/01/Final-Fantasy-XVI_facebook-scaled.jpg",
+      "https://image.ceneostatic.pl/data/products/147127404/258218bf-e421-42af-86a2-3c14dbe5fb5c_i-final-fantasy-xvi-gra-ps5.jpg?=9823b"
     ],
     "oldPrice": "2799.00",
-    "price": "86.00",
-    "sizes": [
-      { "size": "6.0", "isSelected": false },
-      { "size": "6.5", "isSelected": false },
-      { "size": "7.0", "isSelected": false },
-      { "size": "7.5", "isSelected": false },
-      { "size": "8.0", "isSelected": false },
-      { "size": "8.5", "isSelected": false },
-      { "size": "9.0", "isSelected": false }
-    ],
-    "description": "Put some pep in your step with the adidas Originals NMD R1.V2. The modern silhouette teams up with retro details to create a truly stand-out look. Your new favorite sneakers are right here. Regular fit shows off a streamlined silhouette Classic lace closure lets you adjust for your ideal fit.Textile upper provides a snug comfortable feel. Responsive Boost midsole includes plugs for throwback style",
-    "title": "Adidas Running Shoes With Cooling Ventilations"
+    "price": "39.00",
+    "description": "For centuries, people have flocked to her Mothercrystals to partake of their blessing—the abundant aether that fuels the magicks they rely upon in their everyday lives. As the aether begins to fade and the lifeless deadlands spread ever further, so too does the struggle for possession of the final flickers of the Mothers' light grow ever more fierce. Yet amidst the gathering storm, there are those who believe that the legacy of the crystals has shaped mankind's destiny for long enough.",
+    "title": ""
   },
   {
     "id": "7",
-    "name": "UltraBoost Shoes",
+    "name": "Elden Ring",
     "category": "Single-Player",
     "imageUrl": [
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/d60aca33-909b-4df7-9ad7-b75039438e29-GX1398_a1.webp",
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/d60aca33-909b-4df7-9ad7-b75039438e29-GX1398_a1.webp"
+      "https://static.muve.pl/data/Muve_PL_RP/elden-ring.jpg",
+      "https://gaming-cdn.com/images/products/4824/screenshot/elden-ring-pc-game-steam-europe-wallpaper-1.jpg?v=1693544549"
     ],
     "oldPrice": "1049.00",
-    "sizes": [
-      { "size": "6.0", "isSelected": false },
-      { "size": "6.5", "isSelected": false },
-      { "size": "7.0", "isSelected": false },
-      { "size": "7.5", "isSelected": false },
-      { "size": "8.0", "isSelected": false },
-      { "size": "8.5", "isSelected": false },
-      { "size": "9.0", "isSelected": false }
-    ],
-    "price": "90.00",
-    "description": "Put some pep in your step with the adidas Originals NMD R1.V2. The modern silhouette teams up with retro details to create a truly stand-out look. Your new favorite sneakers are right here. Regular fit shows off a streamlined silhouette Classic lace closure lets you adjust for your ideal fit.Textile upper provides a snug comfortable feel. Responsive Boost midsole includes plugs for throwback style",
-    "title": "Adidas Running Shoes With Cooling Ventilations"
+    "price": "30.00",
+    "description": "THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
+    "title": ""
   },
   {
     "id": "8",
-    "name": "UltraBoost Shoes",
+    "name": "The Elder Scrolls V: Skyrim",
     "category": "Single-Player",
     "imageUrl": [
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/51ee25c7-46b6-4fd4-bfe0-7dca9a9fd8a9-GX6326_a1.webp",
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/51ee25c7-46b6-4fd4-bfe0-7dca9a9fd8a9-GX6326_a1.webp"
+      "https://gaming-cdn.com/images/products/146/616x353/the-elder-scrolls-v-skyrim-pc-game-steam-europe-cover.jpg?v=1661270991",
+      "https://images.gog-statics.com/3140fadfa3704b745ebb51d31d4afa6086e880561b6b10bb849e4e5747f1d6a5_product_card_v2_mobile_slider_639.jpg"
     ],
     "oldPrice": "UltraBoost Shoes",
-    "price": "99.00",
-    "sizes": [
-      { "size": "6.0", "isSelected": false },
-      { "size": "6.5", "isSelected": false },
-      { "size": "7.0", "isSelected": false },
-      { "size": "7.5", "isSelected": false },
-      { "size": "8.0", "isSelected": false },
-      { "size": "8.5", "isSelected": false },
-      { "size": "9.0", "isSelected": false }
-    ],
-    "description": "Put some pep in your step with the adidas Originals NMD R1.V2. The modern silhouette teams up with retro details to create a truly stand-out look. Your new favorite sneakers are right here. Regular fit shows off a streamlined silhouette Classic lace closure lets you adjust for your ideal fit.Textile upper provides a snug comfortable feel. Responsive Boost midsole includes plugs for throwback style",
-    "title": "Adidas Running Shoes With Cooling Ventilations"
+    "price": "29.00",
+    "description": "Winner of more than 200 Game of the Year Awards, The Elder Scrolls V: Skyrim Special Edition brings the epic fantasy to life in stunning detail. The Special Edition includes the critically acclaimed game and add-ons with all-new features.",
+    "title": ""
   },
   {
     "id": "9",
-    "name": "UltraBoost Shoes",
+    "name": "Hollow Knight",
     "category": "Single-Player",
     "imageUrl": [
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/51ee25c7-46b6-4fd4-bfe0-7dca9a9fd8a9-GX6326_a1.webp",
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/51ee25c7-46b6-4fd4-bfe0-7dca9a9fd8a9-GX6326_a1.webp"
-    ],
-    "sizes": [
-      { "size": "6.0", "isSelected": false },
-      { "size": "6.5", "isSelected": false },
-      { "size": "7.0", "isSelected": false },
-      { "size": "7.5", "isSelected": false },
-      { "size": "8.0", "isSelected": false },
-      { "size": "8.5", "isSelected": false },
-      { "size": "9.0", "isSelected": false }
+      "https://static.wikia.nocookie.net/hollowknight/images/1/11/Hollow_Knight_Banner.png/revision/latest?cb=20200328021747&path-prefix=pl",
+      "https://assetsio.reedpopcdn.com/poradnik_hollow_postep_head.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp"
     ],
     "oldPrice": "1499.00",
-    "price": "79.00",
-    "description": "Put some pep in your step with the adidas Originals NMD R1.V2. The modern silhouette teams up with retro details to create a truly stand-out look. Your new favorite sneakers are right here. Regular fit shows off a streamlined silhouette Classic lace closure lets you adjust for your ideal fit.Textile upper provides a snug comfortable feel. Responsive Boost midsole includes plugs for throwback style",
-    "title": "Adidas Running Shoes With Cooling Ventilations"
+    "price": "29.00",
+    "description": "Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.",
+    "title": ""
   }
 ]

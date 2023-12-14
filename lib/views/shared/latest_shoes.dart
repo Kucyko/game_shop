@@ -34,13 +34,13 @@ class latestShoes extends StatelessWidget {
                         (index % 2 == 0) ? 1 : 1,
                         (index % 4 == 1 || index % 4 == 3)
                             ? MediaQuery.of(context).size.height *
-                                0.25    // Ulozenie kafelkow
+                                0.26    // Ulozenie kafelkow
                             : MediaQuery.of(context).size.height *
-                                0.25),
+                                0.26),
                 itemBuilder: (context, index) {
                   final shoe = snapshot.data![index];
                   return StaggerTile(
-                      imageUrl: shoe.imageUrl[1],
+                      imageUrl: shoe.imageUrl[0],
                       name: shoe.name,
                       price: "\$${shoe.price}");
                 });
