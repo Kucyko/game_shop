@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:online_shop/views/shared/latest_shoes.dart';
 
 class NewShoes extends StatelessWidget {
   const NewShoes({
