@@ -15,4 +15,4 @@ const OrderSchema = new mongoose.Schema({
     total: {type: Number, required: true},
 },{timestamps: true});
 
-module.exports = mongoose.model("Order", ProductSchema)
+module.exports = mongoose.model("Order", OrderSchema)
