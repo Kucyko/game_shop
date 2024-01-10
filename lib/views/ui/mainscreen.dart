@@ -15,7 +15,6 @@ class MainScreen extends StatelessWidget {
     const HomePage(),
     const SearchPage(),
     const Favorites(),
-    CartPage(),
     const ProfilePage()
   ];
 

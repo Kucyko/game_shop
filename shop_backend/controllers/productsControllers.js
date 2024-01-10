@@ -37,7 +37,7 @@ module.exports ={
                 [
                     {
                       $search: {
-                        index: "games",
+                        index: "sneakers",
                         text: {
                           query: req.params.key,
                           path: {

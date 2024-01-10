@@ -7,7 +7,7 @@ const authRoute = require('./routes/auth')
 const userRoute = require('./routes/users')
 const cartRoute = require('./routes/cart')
 const ordersRoute = require('./routes/orders')
-const port = 3000
+const port = 3005
 
 dotenv.config()
 mongoose.connect(process.env.MONGO_URL).then(() => console.log("connected"))
