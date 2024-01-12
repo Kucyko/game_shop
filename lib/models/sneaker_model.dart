@@ -48,26 +48,4 @@ class Sneakers {
     };
 }
 
-class Size {
-    final String size;
-    final bool isSelected;
-    final String id;
 
-    Size({
-        required this.size,
-        required this.isSelected,
-        required this.id,
-    });
-
-    factory Size.fromJson(Map<String, dynamic> json) => Size(
-        size: json["size"],
-        isSelected: json["isSelected"],
-        id: json["_id"],
-    );
-
-    Map<String, dynamic> toJson() => {
-        "size": size,
-        "isSelected": isSelected,
-        "_id": id,
-    };
-}
