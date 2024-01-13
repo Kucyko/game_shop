@@ -4,6 +4,7 @@ import 'package:online_shop/views/shared/bottom_nav.dart';
 import 'package:online_shop/views/ui/cartpage.dart';
 import 'package:online_shop/views/ui/favorites.dart';
 import 'package:online_shop/views/ui/homepage.dart';
+import 'package:online_shop/views/ui/nonuser.dart';
 import 'package:online_shop/views/ui/profile.dart';
 import 'package:online_shop/views/ui/searchpage.dart';
 import 'package:provider/provider.dart';
@@ -15,7 +16,7 @@ class MainScreen extends StatelessWidget {
     const HomePage(),
     const SearchPage(),
     const Favorites(),
-    const ProfilePage()
+    const NonUser()
   ];
 
   @override
