@@ -41,6 +41,7 @@ class MyApp extends StatelessWidget {
             title: 'Kucyk',
             theme: ThemeData(
               primarySwatch: Colors.blue,
+              scaffoldBackgroundColor: const Color(0xFFE2E2E2),
             ),
 
             // sets the homescreen of the app

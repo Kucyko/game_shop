@@ -14,7 +14,7 @@ class NonUser extends StatelessWidget {
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xffffffff),
+        backgroundColor: const Color(0xFFE2E2E2),
         elevation: 0,
         leading: const Icon(MaterialCommunityIcons.gamepad,
           size: 18,
@@ -86,7 +86,7 @@ class NonUser extends StatelessWidget {
                          ),
                          
                          ReusableText(text: "Please Login into your Account",
-                             style: appstyle(12, Colors.grey, FontWeight.normal)),
+                             style: appstyle(14, Colors.black, FontWeight.normal)),
 
 
 
