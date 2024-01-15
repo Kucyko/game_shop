@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:online_shop/views/shared/app_constants.dart';
+
 import 'package:online_shop/views/shared/appstyle.dart';
 
 class CustomTextField extends StatelessWidget {
@@ -25,7 +25,7 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: Color(kLight.value),
+          color: Colors.white,
           borderRadius: const BorderRadius.all(Radius.circular(12))),
       child: TextFormField(
           keyboardType: keyboard,
@@ -34,8 +34,8 @@ class CustomTextField extends StatelessWidget {
           decoration: InputDecoration(
               hintText: hintText,
               suffixIcon: suffixIcon,
-              suffixIconColor: Color(kDark.value),
-              hintStyle: appstyle(14, Color(kDarkGrey.value), FontWeight.w500),
+              suffixIconColor: Colors.black,
+              hintStyle: appstyle(14, Colors.grey, FontWeight.w500),
               // contentPadding: EdgeInsets.only(left: 24),
               errorBorder: const OutlineInputBorder(
                 borderRadius: BorderRadius.zero,
@@ -60,7 +60,7 @@ class CustomTextField extends StatelessWidget {
               border: InputBorder.none),
           controller: controller,
           cursorHeight: 25,
-          style: appstyle(14, Color(kDark.value), FontWeight.w500),
+          style: appstyle(14, Colors.black, FontWeight.w500),
           validator: validator),
     );
   }

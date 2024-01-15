@@ -1,5 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:online_shop/views/shared/appstyle.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:online_shop/views/shared/custom_textfield.dart';
+import 'package:online_shop/views/shared/reusable_text.dart';
+import 'package:online_shop/views/ui/auth/registration.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -9,8 +18,91 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  TextEditingController email = TextEditingController();
+  TextEditingController password = TextEditingController();
   @override
   Widget build(BuildContext context){
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      appBar: AppBar(
+        elevation: 0,
+        toolbarHeight: 50.h,
+        backgroundColor: Colors.black,
+      ),
+      body: Container(
+        padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            ReusableText(text: "Welcome!", style: appstyle(30, Colors.white, FontWeight.w600) ),
+            ReusableText(text: "Please log into your account", style: appstyle(15, Colors.white, FontWeight.normal) ),
+            SizedBox(
+              height: 50.h,
+            ),
+            CustomTextField(
+                keyboard: TextInputType.emailAddress,
+                hintText: "Email",
+                controller: email,
+                validator: (email){
+                  if(email!.isEmpty || !email.contains("@")) {
+                    return "Please provide valid email";
+                  }else {
+                    return null;
+                  }
+                },
+            ),
+
+            SizedBox(
+              height: 15.h,
+            ),
+            CustomTextField(
+                hintText: "Password",
+                controller: password,
+              suffixIcon: GestureDetector(
+                onTap: () {},
+                child: Icon(Icons.visibility),
+              ),
+              validator: (password){
+                if(password!.isEmpty || password.length < 7) {
+                  return "Please provide valid password";
+                }else {
+                  return null;
+                }
+              },
+            ),
+            SizedBox(
+              height: 10.h,
+            ),
+            Align(
+                alignment: Alignment.centerRight,
+                child: GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> const Registration()));
+                  },
+                child:ReusableText(text: "Register", style: appstyle(15, Colors.white, FontWeight.normal) )),
+            ),
+            SizedBox(
+              height: 20.h,
+            ),
+            GestureDetector(
+              onTap: (){},
+              child: Container(
+                height: 50.h,
+                width: 100,
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
+                ),
+                child:  Center(
+                  child: ReusableText(text: "L O G I N", style: appstyle(18, Colors.black, FontWeight.bold) )),
+                )
+              )
+
+
+            ],
+          ),
+
+        ),
+      );
   }
 }

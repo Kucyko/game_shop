@@ -1,5 +1,5 @@
 class Config{
-   static const apiUrl = "192.168.100.4:3005";
+   static const apiUrl = "onnline-shop1.onrender.com";
    static const paymentBaseUrl = "paymentserver-production.up.railway.app";
   static const String loginUrl = "/api/login";
   static const String paymentUrl = "/stripe/create-checkout-session";

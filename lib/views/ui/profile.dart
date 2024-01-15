@@ -140,7 +140,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       children: [
                         TilesWidget(
                             OnTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => const Favorites()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginPage()));
                             },
                             title: "My Orders",
                             leading: MaterialCommunityIcons.truck_fast_outline),

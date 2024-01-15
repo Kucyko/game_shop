@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:online_shop/controllers/favorites_provider.dart';
+import 'package:online_shop/controllers/login_provider.dart';
 import 'package:online_shop/controllers/mainscreen_provider.dart';
 import 'package:online_shop/controllers/product_provider.dart';
 import 'package:online_shop/views/ui/mainscreen.dart';
@@ -21,6 +22,7 @@ void main() async {
     ChangeNotifierProvider(create: (context) => MainScreenNotifier()),
     ChangeNotifierProvider(create: (context) => ProductNotifier()),
     ChangeNotifierProvider(create: (context) => FavoriteNotifier()),
+    ChangeNotifierProvider(create: (context) => LoginNotifier()),
   ], child: const MyApp()));
 }
 
