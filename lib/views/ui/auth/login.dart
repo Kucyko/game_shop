@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:online_shop/controllers/login_provider.dart';
 import 'package:online_shop/views/shared/appstyle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -9,6 +10,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:online_shop/views/shared/custom_textfield.dart';
 import 'package:online_shop/views/shared/reusable_text.dart';
 import 'package:online_shop/views/ui/auth/registration.dart';
+import 'package:provider/provider.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -22,6 +24,7 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController password = TextEditingController();
   @override
   Widget build(BuildContext context){
+    var authNotifier = Provider.of<LoginNotifier>(context);
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
@@ -44,7 +47,7 @@ class _LoginPageState extends State<LoginPage> {
                 hintText: "Email",
                 controller: email,
                 validator: (email){
-                  if(email!.isEmpty || !email.contains("@")) {
+                  if(email!.isEmpty && !email.contains("@")) {
                     return "Please provide valid email";
                   }else {
                     return null;
@@ -57,13 +60,16 @@ class _LoginPageState extends State<LoginPage> {
             ),
             CustomTextField(
                 hintText: "Password",
+                obscureText: authNotifier.isObsecure,
                 controller: password,
               suffixIcon: GestureDetector(
-                onTap: () {},
-                child: Icon(Icons.visibility),
+                onTap: () {
+                  authNotifier.isObsecure = !authNotifier.isObsecure;
+                },
+                child: authNotifier.isObsecure? Icon(Icons.visibility):Icon(Icons.visibility_off),
               ),
               validator: (password){
-                if(password!.isEmpty || password.length < 7) {
+                if(password!.isEmpty && password.length < 7) {
                   return "Please provide valid password";
                 }else {
                   return null;
