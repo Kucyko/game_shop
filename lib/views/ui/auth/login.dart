@@ -22,6 +22,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
+  
   @override
   Widget build(BuildContext context){
     var authNotifier = Provider.of<LoginNotifier>(context);
