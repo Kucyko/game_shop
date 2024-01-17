@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:online_shop/controllers/login_provider.dart';
 import 'package:online_shop/views/shared/appstyle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -10,6 +11,8 @@ import 'package:online_shop/views/shared/reusable_text.dart';
 import 'package:online_shop/views/shared/tiles_widget.dart';
 import 'package:online_shop/views/ui/cartpage.dart';
 import 'package:online_shop/views/ui/favorites.dart';
+import 'package:online_shop/views/ui/nonuser.dart';
+import 'package:provider/provider.dart';
 
 import 'auth/login.dart';
 
@@ -23,7 +26,8 @@ class ProfilePage extends StatefulWidget {
 class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    var authNotifier = Provider.of<LoginNotifier>(context);
+    return authNotifier.loggeIn ==false ? const NonUser(): Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xFFE2E2E2),
         elevation: 0,
@@ -202,7 +206,10 @@ class _ProfilePageState extends State<ProfilePage> {
                                 title: "Settings",
                                 leading: AntDesign.setting),
                             TilesWidget(
-                                OnTap: (){},
+                                OnTap: (){
+                                  authNotifier.logout();
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=> const LoginPage()));
+                                },
                                 title: "Logout",
                                 leading: AntDesign.logout),
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:online_shop/controllers/login_provider.dart';
+import 'package:online_shop/models/login_model.dart';
 import 'package:online_shop/views/shared/appstyle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -11,6 +12,8 @@ import 'package:online_shop/views/shared/custom_textfield.dart';
 import 'package:online_shop/views/shared/reusable_text.dart';
 import 'package:online_shop/views/ui/auth/registration.dart';
 import 'package:provider/provider.dart';
+
+import '../mainscreen.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -22,7 +25,14 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
-  
+  bool  validation = false;
+  void formValidation(){
+    if(email.text.isNotEmpty && password.text.isNotEmpty){
+      validation = true;
+    }else{
+      validation = false;
+    }
+  }
   @override
   Widget build(BuildContext context){
     var authNotifier = Provider.of<LoginNotifier>(context);
@@ -92,7 +102,21 @@ class _LoginPageState extends State<LoginPage> {
               height: 20.h,
             ),
             GestureDetector(
-              onTap: (){},
+              onTap: (){
+                formValidation();
+                if(validation){
+                  LoginModel model = LoginModel(email: email.text, password: password.text);
+                  authNotifier.userLogin(model).then((response){
+                    if (response = true) {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> MainScreen()));
+                    }else{
+                      debugPrint('Failed to login');
+                    }
+                  });
+                }else{
+                  debugPrint("form not validated");
+                }
+              },
               child: Container(
                 height: 50.h,
                 width: 100,

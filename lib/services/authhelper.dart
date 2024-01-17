@@ -18,7 +18,8 @@ class AuthHelper {
     };
     var url = Uri.http(Config.apiUrl, Config.loginUrl);
 
-    var response = await client.post(url, headers: requsetHeaders, body: jsonEncode(model.toJson()));
+    var response = await client.post(
+        url, headers: requsetHeaders, body: jsonEncode(model.toJson()));
 
     if (response.statusCode == 200) {
       final SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -26,6 +27,7 @@ class AuthHelper {
       String userId = loginResponseModelFromJson(response.body).id;
       await prefs.setString('token', userToken);
       await prefs.setString('userId', userId);
+      await prefs.setBool('isLogged', true);
       return true;
     } else {
       return false;
@@ -38,15 +40,16 @@ class AuthHelper {
     };
     var url = Uri.http(Config.apiUrl, Config.loginUrl);
 
-    var response = await client.post(url, headers: requsetHeaders, body: jsonEncode(model.toJson()));
+    var response = await client.post(
+        url, headers: requsetHeaders, body: jsonEncode(model.toJson()));
 
     if (response.statusCode == 201) {
-
       return true;
     } else {
       return false;
     }
   }
+
   Future<ProfileRes> getProfile() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     String? userToken = prefs.getString('token');
@@ -64,4 +67,5 @@ class AuthHelper {
     } else {
       throw Exception("Failed to get the profile");
     }
+  }
 }
