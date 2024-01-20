@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:online_shop/models/signup_model.dart';
 import 'package:online_shop/views/shared/appstyle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -24,6 +25,15 @@ class _Registration extends State<Registration> {
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
   TextEditingController username = TextEditingController();
+  bool validation = false;
+
+  void formValidation() {
+    if (email.text.isNotEmpty && password.text.isNotEmpty && username.text.isNotEmpty) {
+      validation = true;
+    } else {
+      validation = false;
+    }
+  }
   @override
   Widget build(BuildContext context){
     var authNotifier = Provider.of<LoginNotifier>(context);
@@ -109,7 +119,22 @@ class _Registration extends State<Registration> {
               height: 20.h,
             ),
             GestureDetector(
-                onTap: (){},
+                onTap: (){
+                  formValidation();
+                  if (validation){
+                    SignupModel model = SignupModel(
+                      username: username.text, email: email.text, password: password.text);
+                      authNotifier.registerUser(model).then((response){
+                        if(response == true){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=> const LoginPage()));
+                        }else{
+                          debugPrint('failed to register');
+                        }
+                      });
+                  }else{
+                    debugPrint('form not valid');
+                  }
+                },
                 child: Container(
                   height: 50.h,
                   width: 100,

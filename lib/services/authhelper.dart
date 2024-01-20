@@ -36,13 +36,13 @@ class AuthHelper {
 
   Future<bool> signup(SignupModel model) async {
     Map<String, String> requsetHeaders = {
-      'Content-Type': 'application/jason'
+      'Content-Type': 'application/json'
     };
-    var url = Uri.http(Config.apiUrl, Config.loginUrl);
+    var url = Uri.https(Config.apiUrl, Config.signupUrl);
 
     var response = await client.post(
         url, headers: requsetHeaders, body: jsonEncode(model.toJson()));
-
+    print(response.statusCode);
     if (response.statusCode == 201) {
       return true;
     } else {
@@ -57,7 +57,7 @@ class AuthHelper {
       'Content-Type': 'application/jason',
       'token': 'Bearer $userToken'
     };
-    var url = Uri.http(Config.apiUrl, Config.getUserUrl);
+    var url = Uri.https(Config.apiUrl, Config.getUserUrl);
 
     var response = await client.post(url, headers: requsetHeaders);
 

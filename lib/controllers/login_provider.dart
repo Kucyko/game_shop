@@ -3,6 +3,7 @@ import 'package:online_shop/services/authhelper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/login_model.dart';
+import '../models/signup_model.dart';
 
 class LoginNotifier extends ChangeNotifier {
   bool _isObsecure = false;
@@ -64,5 +65,10 @@ class LoginNotifier extends ChangeNotifier {
     prefs.remove('userId');
     prefs.setBool('isLogged', false);
     loggeIn = prefs.getBool('isLogged') ?? false;
+  }
+  Future<bool> registerUser(SignupModel model) async {
+    responseBool = await AuthHelper().signup(model);
+
+    return responseBool;
   }
 }

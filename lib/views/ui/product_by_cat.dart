@@ -93,15 +93,7 @@ class _ProductByCatState extends State<ProductByCat>
                             color: Colors.white,
                           ),
                         ),
-                        GestureDetector(
-                          onTap: () {
-                            filter();
-                          },
-                          child: const Icon(
-                            FontAwesome.sliders,
-                            color: Colors.white,
-                          ),
-                        )
+
                       ],
                     ),
                   ),
@@ -149,144 +141,13 @@ class _ProductByCatState extends State<ProductByCat>
     );
   }
 
-  Future<dynamic> filter() {
-    double value = 100;
-    return showModalBottomSheet(
-        context: context,
-        isScrollControlled: true,
-        backgroundColor: Colors.transparent,
-        barrierColor: Colors.white54,
-        builder: (context) => Container(
-              height: MediaQuery.of(context).size.height * 0.84,
-              decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(25),
-                    topRight: Radius.circular(25),
-                  )),
-              child: Column(
-                children: [
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  Container(
-                    height: 5,
-                    width: 40,
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                      color: Colors.black38,
-                    ),
-                  ),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.8,
-                    child: Column(
-                      children: [
-                        const CustomSpacer(),
-                        Text(
-                          "Filter",
-                          style: appstyle(40, Colors.black, FontWeight.bold),
-                        ),
-                        const CustomSpacer(),
-                        Text(
-                          "Gender",
-                          style: appstyle(20, Colors.black, FontWeight.bold),
-                        ),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        const Row(
-                          children: [
-                            CategoryBtn(
-                              label: "Single-Player",
-                              buttonClr: Colors.black,
-                            ),
-                            CategoryBtn(
-                              label: "Multi-Player",
-                              buttonClr: Colors.grey,
-                            ),
-                            CategoryBtn(
-                              label: "Indie",
-                              buttonClr: Colors.grey,
-                            ),
-                          ],
-                        ),
-                        const CustomSpacer(),
-                        Text(
-                          "Category",
-                          style: appstyle(20, Colors.black, FontWeight.w600),
-                        ),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        const Row(
-                          children: [
-                            CategoryBtn(
-                              label: "Shoes",
-                              buttonClr: Colors.black,
-                            ),
-                            CategoryBtn(
-                              label: "Apparrels",
-                              buttonClr: Colors.grey,
-                            ),
-                            CategoryBtn(
-                              label: "Accessories",
-                              buttonClr: Colors.grey,
-                            ),
-                          ],
-                        ),
-                        const CustomSpacer(),
-                        Text(
-                          "Price",
-                          style: appstyle(20, Colors.black, FontWeight.bold),
-                        ),
-                        const CustomSpacer(),
-                        Slider(
-                            value: value,
-                            activeColor: Colors.black,
-                            inactiveColor: Colors.grey,
-                            thumbColor: Colors.black,
-                            max: 500,
-                            divisions: 50,
-                            label: value.toString(),
-                            secondaryTrackValue: 200,
-                            onChanged: (double value) {}),
-                        const CustomSpacer(),
-                        Text(
-                          "Brand",
-                          style: appstyle(20, Colors.black, FontWeight.bold),
-                        ),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(8),
-                          height: 80,
-                          child: ListView.builder(
-                              itemCount: brand.length,
-                              scrollDirection: Axis.horizontal,
-                              itemBuilder: (context, index) {
-                                return Padding(
-                                  padding: const EdgeInsets.all(8),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                        color: Colors.grey.shade200,
-                                        borderRadius: const BorderRadius.all(
-                                            Radius.circular(12))),
-                                    child: Image.asset(
-                                      brand[index],
-                                      height: 60,
-                                      width: 80,
-                                      color: Colors.black,
-                                    ),
-                                  ),
-                                );
-                              }),
-                        )
-                      ],
-                    ),
-                  )
-                ],
-              ),
-            ));
+
+
+
+
+
+
+
+
   }
-}
+
