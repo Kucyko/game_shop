@@ -53,6 +53,7 @@ class LoginNotifier extends ChangeNotifier {
 
     loginResponseBool = response;
     loggeIn = prefs.getBool('isLogged') ?? false;
+    print(response);
 
     return loginResponseBool;
   }

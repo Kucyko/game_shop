@@ -19,25 +19,37 @@ module.exports = {
             res.status(500).json({message: error})
         }
     },
-    loginUser: async(req, res)=> {
+    loginUser: async (req, res) => {
         try {
-            const user = await User.findOne({email: req.body.email})
-            !user && res.status(401).json("could not find the user")
-
-            const decryptedpass = CryptoJS.AES.decrypt(user.password, process.env.SECRET);
-            const thepassword = decryptedpass.toString(CryptoJS.enc.Utf8)
-
-            thepassword !== req.body.password && res.status(401).json("Wrong Password")
-
+            // console.log(JSON.stringify({req,res}))
+            const user = await User.findOne({ email: req.body.email });
+            console.log("Test1")
+            console.log({body: req.body})
+            console.log({user})
+            // console.log(JSON.stringify({user}))
+            // throw new Error(JSON.stringify({req,res,user}))
+            if (!user) {
+                return res.status(401).json("Could not find the user");
+            }
+    
+            const decryptedPass = CryptoJS.AES.decrypt(user.password, process.env.SECRET);
+            const thePassword = decryptedPass.toString(CryptoJS.enc.Utf8);
+    
+            if (thePassword !== req.body.password) {
+                return res.status(401).json("Wrong Password");
+            }
+    
             const userToken = jwt.sign({
                 id: user._id
-            }, process.env.JWT_SEC, {expiresIn: "21d"});
-
-            const {password, __v, updatedAt, createdAt, ...others} = user._doc;
-
-            res.status(200).json({...others, token: userToken})
+            }, process.env.JWT_SEC, { expiresIn: "21d" });
+    
+            const { password, __v, updatedAt, createdAt, ...others } = user._doc;
+    
+            res.status(200).json({ ...others, token: userToken });
         } catch (error) {
-            res.status(500).json("failed to login check your credentials")
+            console.log(error.message)
+            res.status(404).json("Failed to login, check your credentials");
         }
-    },
-}
+    }
+    
+    }

@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:http/http.dart' as https;
+import 'package:http/http.dart' as http;
 import 'package:online_shop/models/login_res_model.dart';
 import 'package:online_shop/models/profile_model.dart';
 import 'package:online_shop/models/signup_model.dart';
@@ -10,17 +10,17 @@ import '../models/login_model.dart';
 import 'config.dart';
 
 class AuthHelper {
-  static var client = https.Client();
+  static var client = http.Client();
 
   Future<bool> login(LoginModel model) async {
     Map<String, String> requsetHeaders = {
-      'Content-Type': 'application/jason'
+      'Content-Type': 'application/json'
     };
-    var url = Uri.http(Config.apiUrl, Config.loginUrl);
+    var url = Uri.https(Config.apiUrl, Config.loginUrl);
 
     var response = await client.post(
         url, headers: requsetHeaders, body: jsonEncode(model.toJson()));
-
+    print(response.statusCode);
     if (response.statusCode == 200) {
       final SharedPreferences prefs = await SharedPreferences.getInstance();
       String userToken = loginResponseModelFromJson(response.body).token;

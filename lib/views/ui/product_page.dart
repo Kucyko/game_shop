@@ -8,9 +8,12 @@ import 'package:online_shop/models/sneaker_model.dart';
 import 'package:online_shop/services/helper.dart';
 import 'package:online_shop/views/shared/appstyle.dart';
 import 'package:online_shop/views/shared/checkout_btn.dart';
+import 'package:online_shop/views/ui/auth/login.dart';
 import 'package:provider/provider.dart';
 
-import '../../models/constants.dart';
+import '../../controllers/login_provider.dart';
+import 'nonuser.dart';
+
 
 class ProductPage extends StatefulWidget {
   const ProductPage({super.key, required this.sneakers});
@@ -38,7 +41,9 @@ class _ProductPageState extends State<ProductPage> {
 
   @override
   Widget build(BuildContext context) {
+    var authNotifier = Provider.of<LoginNotifier>(context);
     return Scaffold(
+
         resizeToAvoidBottomInset: false,
         body: Consumer<ProductNotifier>(
         builder: (context, productNotifier, child) {
@@ -273,18 +278,12 @@ class _ProductPageState extends State<ProductPage> {
                                         top: 12),
                                     child: CheckoutButton(
                                       onTap: () async {
-                                        _createCart({
-                                          "id": widget.sneakers.id,
-                                          "name": widget.sneakers.name,
-                                          "category":
-                                          widget.sneakers.category,
-                                          "imageUrl":
-                                          widget.sneakers.imageUrl[0],
-                                          "price": widget.sneakers.price,
-                                          "qty": 1
-                                        });
+                                        if (authNotifier.loggeIn == true) {
 
-                                        Navigator.pop(context);
+                                        }
+                                        else {
+                                          Navigator.push(context, MaterialPageRoute(builder: (context)=> const LoginPage()));
+                                        }
                                       },
                                       label: "Add to Cart",
                                     ),
