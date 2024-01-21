@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:online_shop/controllers/login_provider.dart';
+import 'package:online_shop/services/authhelper.dart';
 import 'package:online_shop/views/shared/appstyle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -16,6 +17,7 @@ import 'package:online_shop/views/ui/mainscreen.dart';
 import 'package:online_shop/views/ui/nonuser.dart';
 import 'package:provider/provider.dart';
 
+import '../../models/profile_model.dart';
 import 'auth/login.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -105,17 +107,51 @@ class _ProfilePageState extends State<ProfilePage> {
                                 width: 8,
                               ),
 
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  ReusableText(text: "Username",
-                                      style: appstyle(
-                                          14, Colors.black, FontWeight.normal)),
-                                  ReusableText(text: "Email@gmail.com",
-                                      style: appstyle(
-                                          14, Colors.grey, FontWeight.normal)),
-                                ],
+                              FutureBuilder(
+                                future: AuthHelper().getProfile(),
+                                builder: (context, snapshot) {
+                                  if (snapshot.connectionState == ConnectionState.waiting) {
+                                    return const Center(
+                                      child: CircularProgressIndicator.adaptive(),
+                                    );
+                                  } else if (snapshot.hasError) {
+                                    return Center(
+                                      child: ReusableText(
+                                        text: "Error getting the data",
+                                        style: appstyle(18, Colors.black, FontWeight.w600),
+                                      ),
+                                    );
+                                  } else {
+                                    final userData = snapshot.data as ProfileRes?;
+                                    if (userData != null) {
+                                      return SizedBox(
+                                        height: 35.h,
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            ReusableText(
+                                              text: userData.username,
+                                              style: appstyle(14, Colors.black, FontWeight.normal),
+                                            ),
+                                            ReusableText(
+                                              text: userData.email,
+                                              style: appstyle(9, Colors.grey, FontWeight.normal),
+                                            ),
+                                          ],
+                                        ),
+                                      );
+                                    } else {
+                                      return Center(
+                                        child: ReusableText(
+                                          text: "User data is null",
+                                          style: appstyle(18, Colors.black, FontWeight.w600),
+                                        ),
+                                      );
+                                    }
+                                  }
+                                },
                               ),
+
 
 
                             ],

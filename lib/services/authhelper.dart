@@ -53,13 +53,13 @@ class AuthHelper {
   Future<ProfileRes> getProfile() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     String? userToken = prefs.getString('token');
-    Map<String, String> requsetHeaders = {
-      'Content-Type': 'application/jason',
+    Map<String, String> requestHeaders = {
+      'Content-Type': 'application/json',
       'token': 'Bearer $userToken'
     };
     var url = Uri.https(Config.apiUrl, Config.getUserUrl);
 
-    var response = await client.post(url, headers: requsetHeaders);
+    var response = await client.get(url, headers: requestHeaders);
 
     if (response.statusCode == 200) {
       var profile = profileResFromJson(response.body);
