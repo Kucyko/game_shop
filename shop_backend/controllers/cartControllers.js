@@ -41,7 +41,8 @@ module.exports = {
     getCart: async (req, res)=>{
         const userId = req.user.id;
         try {
-            const cart = await Cart.find({userId});
+            const cart = await Cart.find({userId})
+            .populate('products.cartItem', "_id name imageUrl price category");
             res.status(200).json(cart);
         } catch (error) {
             res.status(500),json(error);
@@ -53,7 +54,7 @@ module.exports = {
 
         try {
             const updatedCart = await Cart.findOneAndUpdate(
-                {'products._id': cartitemId},
+                {'products._id': cartItemId},
                 {$pull: {products: {_id: cartItemId}}},
                 {new: true}
             );
@@ -64,7 +65,8 @@ module.exports = {
 
             res.status(200).json(updatedCart);
         } catch (error) {
-            res.status(500),json(error);
+            res.status(500).json(error);
+            console.log(error);
         }
     }
 

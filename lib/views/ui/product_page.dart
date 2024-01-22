@@ -5,12 +5,15 @@ import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:hive/hive.dart';
 import 'package:online_shop/controllers/product_provider.dart';
 import 'package:online_shop/models/sneaker_model.dart';
+import 'package:online_shop/services/carthelper.dart';
 import 'package:online_shop/services/helper.dart';
 import 'package:online_shop/views/shared/appstyle.dart';
 import 'package:online_shop/views/shared/checkout_btn.dart';
 import 'package:online_shop/views/ui/auth/login.dart';
+import 'package:online_shop/views/ui/cartpage.dart';
 import 'package:provider/provider.dart';
 
+import '../../controllers/add_to_cart.dart';
 import '../../controllers/login_provider.dart';
 import 'nonuser.dart';
 
@@ -279,6 +282,15 @@ class _ProductPageState extends State<ProductPage> {
                                     child: CheckoutButton(
                                       onTap: () async {
                                         if (authNotifier.loggeIn == true) {
+                                          AddToCart model = AddToCart(cartItem: widget.sneakers.id, quantity: 1);
+                                          CartHelper().addToCart(model);
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (
+                                                      context) =>
+                                                      CartPage()));
+
 
                                         }
                                         else {

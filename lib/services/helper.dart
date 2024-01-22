@@ -53,7 +53,7 @@ class Helper {
   }
 
   Future<List<Sneakers>> search(String searchQuery) async {
-    var url = Uri.http(Config.apiUrl,'${Config.search}$searchQuery');
+    var url = Uri.https(Config.apiUrl,'${Config.search}$searchQuery');
 
     var response = await client.get(url);
 
